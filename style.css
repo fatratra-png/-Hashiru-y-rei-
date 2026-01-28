@@ -1,5 +1,5 @@
 body {
-  background: #0d1026; /* nuit */
+  background: radial-gradient(#6c63ff, rgba(20, 18, 50, 0.6)); /* nuit */
   color: #eae6ff;
   text-align: center;
   font-family: "Baloo 2", cursive;
@@ -62,7 +62,7 @@ p {
     bottom: 0;
   }
   50% {
-    bottom: 120px;
+    bottom: 200px;
   }
   100% {
     bottom: 0;
