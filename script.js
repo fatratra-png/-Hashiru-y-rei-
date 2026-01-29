@@ -8,7 +8,6 @@ let speed = 5;
 let jumping = false;
 let playing = true;
 
-/* SAUT DU FANTÔME */
 document.addEventListener("keydown", (e) => {
   if (e.code === "Space" && !jumping) {
     jump();
@@ -25,7 +24,6 @@ function jump() {
   }, 500);
 }
 
-/* BOUCLE DU JEU */
 function gameLoop() {
   if (!playing) return;
 
@@ -39,12 +37,12 @@ function gameLoop() {
     window.getComputedStyle(ghost).getPropertyValue("bottom"),
   );
 
-  // Collision
+
   if (bombRight > 680 && bombRight < 740 && ghostBottom < 40) {
     endGame();
   }
 
-  // Reset obstacle
+
   if (bombRight > 860) {
     bomb.style.right = "-60px";
     score++;
